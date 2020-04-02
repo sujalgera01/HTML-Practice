@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+</head>
+<body>
+	<h1><u>SURVEY FORM</u></h1>
+<hr>
+<h2>Please Fill the Form</h2>
+<form>
+	<label for="Name">FIRST NAME: </label>
+	<input id="Name" type="text" placeholder="First Name" required>
+	<label for="mName">MIDDLE NAME: </label>
+	<input id="mName" type="text" placeholder="Middle Name" >
+	<label for="lName">LAST NAME: </label>
+	<input id="lName" type="text" placeholder="Last Name" required>
+	<br><br>
+	<label for="dob">Date of Birth: </label>
+	<input id="dob" type="date" placeholder="dd/mm/yyyy" required="">
+	<br><br>
+	<label> GENDER: 
+	<label><input name="gender" type="radio" required value="Male">Male </label>
+	<label><input name="gender" type="radio" required value="Female">Female </label>
+	<label><input name="gender" type="radio" required value="Other">Other </label>
+	</label>
+	<br><br>
+	<label>
+		E-MAIL: 
+		<input type="email" required placeholder="Username">
+	</label>
+	<label>
+		PASSWORD: 
+		<input type="password" required placeholder="Password">
+	</label>
+	<br><br>
+	<label>STATE: 
+		<select>
+			<option>DELHI</option>
+			<option>PUNJAB</option>
+			<option>HARYANA</option>
+			<option>UTTAR PRADESH</option>
+			<option>HIMACHAL PRADESH</option>
+		</select>
+	</label>
+	<br><br>
+	<label>
+		RESIDENTIAL ADDRESS: 
+		<br>
+		<textarea rows="10" cols="20"></textarea>
+	</label>
+	<br><br>
+	<label>
+		What do you like?
+		<br>    
+		<label><input type="radio" name="choice" required value="Tea"> Tea</label>
+		<label><input type="radio" name="choice" required value="Coffee"> Coffee</label>
+		<label><input type="radio" name="choice" required value="Both"> Both</label>
+	</label>
+	<br><br>
+	<label>
+		Which sport are you intrested in? 
+		<br>
+		<label><input type="checkbox">Football</label>
+		<label><input type="checkbox">Basketball</label>
+		<br>
+		<label><input type="checkbox">Badminton</label>
+		<label><input type="checkbox">Cricket</label>
+	</label>
+	<br><br>
+	<label>
+		Describe yourself in a word:
+		<br>
+		<input type="text" required>
+	</label>
+	<br><br>
+	<label>Comment:
+	<br> 
+		<textarea rows="10" cols="30"></textarea>
+	</label>
+	<hr>
+	<button>Reset Form</button>
+	<button>Submit Form</button>
+</form>
+</body>
+</html>
