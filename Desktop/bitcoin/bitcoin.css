@@ -47,13 +47,12 @@ header {
 }
 
 
-.btn-success {
-	margin-top: 50px;
-	margin-right: 25px;
-}
-
 .btn-warning {
 	margin-top: 50px;
 	padding: 20px;
 }
 
+.btn-success {
+	margin-top: 50px;
+	margin-right: 25px;
+}
