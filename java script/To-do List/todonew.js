@@ -37,6 +37,6 @@ function addTodo(){
 
 function delTodo(){
 	var index = prompt("Enter the index of Todo to delete");
-	todos.splice(index,1);
+	todos.splice(index);
 	console.log("Deleted Todo");
 }
