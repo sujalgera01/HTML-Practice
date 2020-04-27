@@ -12,11 +12,11 @@ else if(input === "new"){
 	addTodo();
 }
 
-else if(input === "delete"){
-	delTodo();
+else if(input === "remove"){
+	removeTodo();
 }
 
-input = prompt("What would you like to do?")
+input = prompt("What would you like to do?");
 }
 console.log("You have Quit!"); 
 
@@ -35,8 +35,8 @@ function addTodo(){
 	console.log("Added Todo");
 }
 
-function delTodo(){
+function removeTodo(){
 	var index = prompt("Enter the index of Todo to delete");
-	todos.splice(index);
+	todos.delete(index);
 	console.log("Deleted Todo");
 }
