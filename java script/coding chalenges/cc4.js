@@ -3,24 +3,31 @@ var john = {
 	lastName: 'Smith',
 	mass: 80,
 	height: 1.76,
+	BMI: function(mass , height){
+	var result = this.mass / (this.height * this.height);
+	return result;
+}
 };
 
 var mark = {
 	firstName: 'Mark',
 	lastName: 'Henry',
 	mass: 91,
-	height: 1.89
-};
-var mass = this.mass;
-var height = this.height;
-var BMI = function(mass , height){
-	var result = mass / (height * height);
+	height: 1.89,
+	BMI: function(mass , height){
+	var result = this.mass / (this.height * this.height);
 	return result;
 }
+};
 
-john.BMI = BMI();
-mark.BMI = BMI();
+console.log(john.BMI());
+console.log(mark.BMI());
 
-console.log(john.BMI);
-console.log(mark.BMI);
+if (john.BMI > mark.BMI){
+	console.log("John's BMI is greater and have the value" + john.BMI());
+}
+else{
+	console.log("Mark's BMI is greater and have the value" + mark.BMI());
+}
+
 
