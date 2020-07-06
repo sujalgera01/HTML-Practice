@@ -15,12 +15,19 @@ app.get("/bye",function(req,res){
     res.send("Good Bye!! ?");
 });
 
+app.get("/r/:name/comments/:id/:title", function(req,res){
+    console.log(req.params)
+    res.send("Welcome to comments page");
+});
+
+
 app.get("/r/:name", function(req,res){
-    res.send("Welcome to subreddit");
+    var name = req.params.name;
+    res.send("Welcome to the" + name.toUpperCase() + "subreddit");
 });
 
 app.get("*",function(req,res){
-    res.send("Yoiu are on a random page..");
+    res.send("You are on a random page..");
 });
 
 app.listen("3000", function(){
