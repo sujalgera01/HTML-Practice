@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C Code</title>
+</head>
+<body>
+	<pre>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define LEN 100
+#define WID 80
+
+void sort(char s[][WID], int n);
+void display(char s[][WID], int n);
+
+int main()
+{
+    int n, i;
+    char s[LEN][WID];
+    printf("Enter number of strings : ");
+    scanf("%d", &n);
+    printf("Enter strings one by one :\n");
+    for (i = 0; i < n; i++) {
+        printf("%d : ", i + 1);
+        scanf(" %s", s[i]);
+    }
+
+    printf("The initial elements are:\n");
+    display(s, n);
+    sort(s, n);
+    printf("The elements after sorting are:\n");
+    display(s, n);
+
+    return 0;
+}
+
+</pre>
+</body>
+</html>

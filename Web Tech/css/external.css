@@ -1,0 +1,29 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 25px;
+	font-family: cursive;
+	text-decoration: none;
+}
+
+h2,p {
+	margin-top: 20px;
+	text-align: center;
+	color: #222;
+}
+
+.container {
+	border: 2px solid #000;
+	width: 50%;
+	margin: 100px;
+}
+
+#para1 {
+	border: 1px dashed black;
+	width: 30%;
+	margin: 100px;
+}
